@@ -1,26 +1,19 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import { BrowserRouter as Router, Switch, Route, } from "react-router-dom"
+import './assets/style/app.sass'
+
+import Layout from './views/Layout'
+import SignIn from './views/SignIn'
+import NotFound from './views/NotFound'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Router>
+      <Route path='/sign-in' component={SignIn} />
+      <Route path='/404' component={NotFound} />
+      <Route path='/' component={Layout} />
+    </Router>
+  )
 }
 
-export default App;
+export default App
