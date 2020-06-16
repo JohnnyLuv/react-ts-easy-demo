@@ -2,9 +2,10 @@ import React from 'react'
 import '../assets/style/layout.sass'
 
 import { MyMenuList, MyRouter } from '../components/layout/MenuList'
+import MyHeader from '../components/layout/Header'
 
 import { Layout } from 'antd'
-const { Header, Content, Footer, Sider } = Layout
+const { Content, Footer, Sider } = Layout
 
 
 function MyLayout() {
@@ -15,7 +16,7 @@ function MyLayout() {
         <MyMenuList />
       </Sider>
       <Layout className="site-layout">
-        <Header className="layout-header" />
+        <MyHeader />
         <Content className='layout-content'>
           <MyRouter />
         </Content>
