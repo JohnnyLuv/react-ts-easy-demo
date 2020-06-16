@@ -1,49 +1,29 @@
-.layout-wrap
-  display: flex
-  background-color: #f0f2f5
-
 .layout-sider
-  width: 200px
-  background-color: #2A2E39
-  .layout-logo
-    height: 40px
-    line-height: 40px
+  overflow: auto
+  height: 100vh
+  position: fixed
+  left: 0
+  .logo
+    height: 32px
+    line-height: 32px
     text-align: center
-    font-size: 16px
-    font-weight: bold
     color: #fff
-    background-color: rgba(255, 255, 255, .2)
-    margin: 20px
-  .layout-menu-list
-    padding: 0
-    margin: 0
-    .menu-item
-      height: 45px
-      color: #BFC1C7
-      font-size: 14px
-      display: flex
-      align-items: center
-      padding-left: 30px
+    background: rgba(255, 255, 255, .2)
+    margin: 16px
 
-.layout-container
-  flex: 1
-  .layout-header
-    height: 60px
-    display: flex
-    align-items: center
-    justify-content: flex-end
-    background-color: #fff
-    padding: 0 50px
+.site-layout
+  margin-left: 200px
 
-  .layout-content
-    min-height: calc( 100vh - 220px )
-    background-color: #fff
-    padding: 30px
-    margin: 30px 30px 0
+.layout-header
+  background: #fff
+  padding: 0
 
-  .layout-footer
-    height: 70px
-    line-height: 70px
-    font-size: 14px
-    text-align: center
-    color: #666
+.layout-content
+  min-height: calc( 100vh - 160px )
+  background-color: #fff
+  margin: 24px 16px 0
+  padding: 24px
+  overflow: initial
+
+.layout-footer
+  text-align: center

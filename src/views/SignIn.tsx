@@ -1,10 +1,11 @@
 import React from 'react'
 
-export default (props: any) => {
-  console.log(props)
+function SignIn() {
   return (
     <>
       <div>signin</div>
     </>
   )
 }
+
+export default SignIn
