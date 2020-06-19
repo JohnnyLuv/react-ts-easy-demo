@@ -5,8 +5,7 @@ function CountNum(props: any) {
   return (
     <>
       <div>count: {props.countState.count}</div>
-      <div>key: {props.keyState.value}</div>
-      <div>val: {props.keyState.val}</div>
+      <div>key: {props.userState.account}</div>
     </>
   )
 }

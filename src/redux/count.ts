@@ -1,6 +1,8 @@
-const countState = (state = {
+const initialState = {
   count: 0,
-}, action: any) => {
+}
+
+const countState = (state = initialState, action: any) => {
   switch (action.type) {
     case 'RESET_NUM':
       return { ...state, count: 0 }
@@ -14,15 +16,15 @@ const countState = (state = {
 }
 
 const countAction = {
+  rerset: () => {
+    return { type: 'RESET_NUM' }
+  },
   add: (num: Number) => {
     return { type: 'ADD_NUM', payload: { num } }
   },
   reduce: (num: Number) => {
     return { type: 'REDUCE_NUM', payload: { num } }
   },
-  rerset: () => {
-    return { type: 'RESET_NUM' }
-  }
 }
 
 export {

@@ -1,12 +1,12 @@
 import { createStore, combineReducers } from 'redux'
+import { userState } from './user'
 import { countState } from './count'
-import { keyState } from './key'
 import { composeWithDevTools } from 'redux-devtools-extension'
 
 const store = createStore(
   combineReducers({
+    userState,
     countState,
-    keyState,
   }),
   composeWithDevTools()
 )
