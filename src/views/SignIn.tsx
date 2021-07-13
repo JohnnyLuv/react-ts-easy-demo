@@ -2,7 +2,7 @@ import React from 'react'
 import { Form, Input, Button } from 'antd'
 import { useHistory } from 'react-router-dom'
 
-import '../assets/style/signin.sass'
+import '../assets/style/signin.css'
 
 const layout = {
   labelCol: { span: 8 },

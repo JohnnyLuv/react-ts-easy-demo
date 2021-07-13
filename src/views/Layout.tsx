@@ -1,5 +1,5 @@
 import React from 'react'
-import '../assets/style/layout.sass'
+import '../assets/style/layout.css'
 
 import { MyMenuList, MyRouter } from '../components/layout/MenuList'
 import MyHeader from '../components/layout/Header'
